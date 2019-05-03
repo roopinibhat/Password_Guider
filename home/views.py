@@ -24,8 +24,7 @@ def view(request):
 		for item in encrypted:
 			basefile.write(item)
 			basefile.write(bytes('\n'.encode()))
-		basefile.close()	
-		return redirect('home:display')
+		basefile.close()			return redirect('home:display')
 
 def display(request):
 			if request.method =="GET":

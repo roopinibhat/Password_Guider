@@ -1,7 +1,27 @@
 <html>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
 <body>
+	<div class='grid-container'>
+		<div class='grid-item'>
 <h2> html forms</h2>
+</div>
+</div>
 <form  method="POST" class="pure-form pure-form-stacked">{% csrf_token %}
     <fieldset><div class="pure-control-group">
 first name:<br>
